@@ -1,0 +1,18 @@
+I"£(function() {
+  $(function() {
+    var $messages;
+    $messages = $('#messages');
+    $messages.scrollTop($messages.prop('scrollHeight'));
+    return $('#message_input').focus();
+  });
+
+  $(document).on('keypress', '#message_input', function(e) {
+    if (e.keyCode === 13 && e.target.value) {
+      App.room.speak(e.target.value);
+      e.target.value = '';
+      return e.preventDefault();
+    }
+  });
+
+}).call(this);
+:ET
