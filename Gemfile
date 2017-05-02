@@ -34,6 +34,11 @@ group :development, :test do
   gem 'byebug'
 end
 
+# used for getting actioncable running on heroku
+gem 'redis', '~> 3.0'
+gem 'sidekiq'
+gem 'sinatra', git: 'https://github.com/sinatra/sinatra', :require => nil
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 3.0'
