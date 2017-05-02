@@ -452,3 +452,449 @@ FOREIGN KEY ("user_id")
   [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
   [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_advisory_unlock(5259265151277966360)[0m
   [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/blog" for 127.0.0.1 at 2017-05-02 20:57:11 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  
+ActionController::RoutingError (No route matches [GET] "/blog"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.1ms)
+  Rendered collection of /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (5.0ms)
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.9ms)
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (9.7ms)
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (41.8ms)
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:11 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:11 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:11 +0100
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:11 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:11 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:11 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:11 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:11 +0100
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:12 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:12 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:12 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:12 +0100
+Started GET "/" for 127.0.0.1 at 2017-05-02 20:57:14 +0100
+Processing by RoomsController#show as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 9ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2017-05-02 20:57:14 +0100
+Processing by Devise::SessionsController#new as HTML
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/sessions/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 366ms (Views: 353.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks.self-f5a54f6ce56076ac3133ce547c9672851e1f1d3fdb0a05963bf7ef31bd482ce6.js?body=1" for 127.0.0.1 at 2017-05-02 20:57:14 +0100
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:15 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:15 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:15 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:15 +0100
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-05-02 20:57:18 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zq12SkCNfkhdPJ8qLTUaA/ImKu/omdhdo0wQNbKFUYHEdJ/GqoP8m1/phKhEK00aqPNImJtILaSMA3jJKK1TAQ==", "user"=>{"email"=>"dunny@dsl.pipex.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "dunny@dsl.pipex.co.uk"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.8ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Zq12SkCNfkhdPJ8qLTUaA/ImKu/omdhdo0wQNbKFUYHEdJ/GqoP8m1/phKhEK00aqPNImJtILaSMA3jJKK1TAQ==", "user"=>{"email"=>"dunny@dsl.pipex.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/shared/_links.html.erb (1.2ms)
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/sessions/new.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 193ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:22 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:22 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:22 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:22 +0100
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:31 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:31 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:31 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:31 +0100
+Started POST "/users/sign_in" for 127.0.0.1 at 2017-05-02 20:57:36 +0100
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9fi+E6uYlzPGIQ3YPfezlAs7wAlbsDPnYT9GgFJs9Q1XIVefQZYV4MT0FlpU6eSNUe6ifihhxh5OcC58yET3jQ==", "user"=>{"email"=>"dunny@dsl.pipex.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "dunny@dsl.pipex.co.uk"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.6ms)
+
+
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9fi+E6uYlzPGIQ3YPfezlAs7wAlbsDPnYT9GgFJs9Q1XIVefQZYV4MT0FlpU6eSNUe6ifihhxh5OcC58yET3jQ==", "user"=>{"email"=>"dunny@dsl.pipex.co.uk", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/sessions/new.html.erb within layouts/application
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 189ms (Views: 40.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:36 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:36 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:36 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:36 +0100
+Started GET "/users/sign_up" for 127.0.0.1 at 2017-05-02 20:57:37 +0100
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/shared/_links.html.erb (2.4ms)
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/registrations/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 50ms (Views: 47.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:41 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:41 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:41 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:41 +0100
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:42 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:42 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:42 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:42 +0100
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:42 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:42 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:42 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:42 +0100
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:46 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:46 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:46 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:46 +0100
+Started POST "/users" for 127.0.0.1 at 2017-05-02 20:57:48 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mh8492dm7tk2S7IWcsrvc42buocUe9Izp2EF59a8hbyCY3cbLD2fQaYZ2RYsF7tkMBog9dVHeI1YyO1G2Leeqw==", "user"=>{"email"=>"dunny@dsl.pipex.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dunny@dsl.pipex.co.uk"], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/registrations/new.html.erb within layouts/application
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/bundler/gems/devise-83213569dd77/app/views/devise/registrations/new.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 182ms (Views: 20.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:49 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:49 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:49 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:49 +0100
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:57:58 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:58 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+An unauthorized connection attempt was rejected
+Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:58 +0100
+Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:57:58 +0100
+Started POST "/users" for 127.0.0.1 at 2017-05-02 20:58:02 +0100
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"aR9Qq4TYgpYZsSQ1YgrDCv3dNyaagogrrhcz/jV+DbbLxrknbtYARRtkP7cLFJQTpwhVUelTfdKBWFsCr1YPNg==", "user"=>{"email"=>"dunny@dsl.pipex.co.uk", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "dunny@dsl.pipex.co.uk"], ["LIMIT", 1]]
+  [1m[35mSQL (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["email", "dunny@dsl.pipex.co.uk"], ["encrypted_password", "$2a$11$AXjencxcZlCIDNyzQ9PP8Oy2Yss39da99Ol6Ai.q.lI9nrce1Nn1G"], ["created_at", 2017-05-02 19:58:02 UTC], ["updated_at", 2017-05-02 19:58:02 UTC]]
+  [1m[35m (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  [1m[33mUPDATE "users" SET "sign_in_count" = $1, "current_sign_in_at" = $2, "last_sign_in_at" = $3, "current_sign_in_ip" = $4, "last_sign_in_ip" = $5, "updated_at" = $6 WHERE "users"."id" = $7[0m  [["sign_in_count", 1], ["current_sign_in_at", 2017-05-02 19:58:02 UTC], ["last_sign_in_at", 2017-05-02 19:58:02 UTC], ["current_sign_in_ip", "127.0.0.1"], ["last_sign_in_ip", "127.0.0.1"], ["updated_at", 2017-05-02 19:58:02 UTC], ["id", 1]]
+  [1m[35m (8.4ms)[0m  [1m[35mCOMMIT[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 172ms (ActiveRecord: 14.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-05-02 20:58:02 +0100
+Processing by RoomsController#show as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered rooms/show.html.erb within layouts/application (4.2ms)
+Completed 200 OK in 23ms (Views: 18.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:58:02 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:58:02 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel#speak({"message"=>"message"})
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35mSQL (1.0ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "message"], ["created_at", 2017-05-02 19:58:09 UTC], ["updated_at", 2017-05-02 19:58:09 UTC], ["user_id", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] [dunny@dsl.pipex.co.uk] [ActiveJob] Enqueued BroadcastMessageJob (Job ID: 219edbc5-e152-4e8e-adc9-4feba00afeb4) to Async(default) with arguments: #<GlobalID:0x007f6980a9a3f8 @uri=#<URI::GID gid://ac/Message/1>>
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [BroadcastMessageJob] [219edbc5-e152-4e8e-adc9-4feba00afeb4] Performing BroadcastMessageJob from Async(default) with arguments: #<GlobalID:0x007f6980a162d8 @uri=#<URI::GID gid://ac/Message/1>>
+[ActiveJob] [BroadcastMessageJob] [219edbc5-e152-4e8e-adc9-4feba00afeb4]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [BroadcastMessageJob] [219edbc5-e152-4e8e-adc9-4feba00afeb4]   Rendered messages/_message.html.erb (5.4ms)
+[ActiveJob] [BroadcastMessageJob] [219edbc5-e152-4e8e-adc9-4feba00afeb4] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n  <a href=\"\" class=\"message_profile-pic\"></a>\n  <a href=\"\" class=\"message_username\">dunny@dsl.pipex.co.uk</a>\n  <span class=\"message_timestamp\">\n    2017-05-02 19:58:09 UTC\n  </span>\n  <span class=\"message_star\"></span>\n  <span class=\"message_content\">\n    message\n  </span>\n</div>\n"
+[ActiveJob] [BroadcastMessageJob] [219edbc5-e152-4e8e-adc9-4feba00afeb4] Performed BroadcastMessageJob from Async(default) in 9.08ms
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel transmitting "<div class=\"message\">\n  <a href=\"\" class=\"message_profile-pic\"></a>\n  <a href=\"\" class=\"message_username\">dunny@dsl.pipex.co.uk</a>\n  <span class=\"message_timestamp\">\n    2017-05-02 19:58:09 UTC\n  </span>\n  <span class=\"message_star\"></span>\n  <span class=\"message_content\"... (via streamed from room_channel)
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:58:11 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:58:11 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:58:12 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:58:12 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 20:58:12 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 20:58:12 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
+[ActionCable] [dunny@dsl.pipex.co.uk] Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 21:08:37 +0100
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel stopped streaming from room_channel
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 21:24:44 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 21:24:44 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 21:24:44 +0100
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+[ActionCable] [dunny@dsl.pipex.co.uk] Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 21:24:44 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 21:24:44 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 21:24:44 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 21:24:44 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 21:24:45 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 21:24:45 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
+Started GET "/welcome/index" for 127.0.0.1 at 2017-05-02 21:25:20 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/welcome/index"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendered collection of /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (240.9ms)
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.4ms)
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.4ms)
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (1008.1ms)
+Started GET "/" for 127.0.0.1 at 2017-05-02 21:25:25 +0100
+Processing by RoomsController#show as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [1 times] (10.9ms)
+  Rendered rooms/show.html.erb within layouts/application (22.8ms)
+Completed 200 OK in 161ms (Views: 149.0ms | ActiveRecord: 4.2ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 21:25:25 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 21:25:25 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel#speak({"message"=>"This is my message"})
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "This is my message"], ["created_at", 2017-05-02 20:25:35 UTC], ["updated_at", 2017-05-02 20:25:35 UTC], ["user_id", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35m (3.5ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] [dunny@dsl.pipex.co.uk] [ActiveJob] Enqueued BroadcastMessageJob (Job ID: 4c5de546-89b4-4387-971b-e0db6b4f58f7) to Async(default) with arguments: #<GlobalID:0x007f656c038af8 @uri=#<URI::GID gid://ac/Message/2>>
+  [1m[36mMessage Load (0.5ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+[ActiveJob] [BroadcastMessageJob] [4c5de546-89b4-4387-971b-e0db6b4f58f7] Performing BroadcastMessageJob from Async(default) with arguments: #<GlobalID:0x007f654802ddc0 @uri=#<URI::GID gid://ac/Message/2>>
+[ActiveJob] [BroadcastMessageJob] [4c5de546-89b4-4387-971b-e0db6b4f58f7]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [BroadcastMessageJob] [4c5de546-89b4-4387-971b-e0db6b4f58f7]   Rendered messages/_message.html.erb (2.1ms)
+[ActiveJob] [BroadcastMessageJob] [4c5de546-89b4-4387-971b-e0db6b4f58f7] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n  <a href=\"\" class=\"message_profile-pic\"></a>\n  <a href=\"\" class=\"message_username\">dunny@dsl.pipex.co.uk</a>\n  <span class=\"message_timestamp\">\n    2017-05-02 20:25:35 UTC\n  </span>\n  <span class=\"message_star\"></span>\n  <span class=\"message_content\">\n    This is my message\n  </span>\n</div>\n"
+[ActiveJob] [BroadcastMessageJob] [4c5de546-89b4-4387-971b-e0db6b4f58f7] Performed BroadcastMessageJob from Async(default) in 11.26ms
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel transmitting "<div class=\"message\">\n  <a href=\"\" class=\"message_profile-pic\"></a>\n  <a href=\"\" class=\"message_username\">dunny@dsl.pipex.co.uk</a>\n  <span class=\"message_timestamp\">\n    2017-05-02 20:25:35 UTC\n  </span>\n  <span class=\"message_star\"></span>\n  <span class=\"message_content\"... (via streamed from room_channel)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel transmitting "<div class=\"message\">\n  <a href=\"\" class=\"message_profile-pic\"></a>\n  <a href=\"\" class=\"message_username\">dunny@dsl.pipex.co.uk</a>\n  <span class=\"message_timestamp\">\n    2017-05-02 20:25:35 UTC\n  </span>\n  <span class=\"message_star\"></span>\n  <span class=\"message_content\"... (via streamed from room_channel)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel transmitting "<div class=\"message\">\n  <a href=\"\" class=\"message_profile-pic\"></a>\n  <a href=\"\" class=\"message_username\">dunny@dsl.pipex.co.uk</a>\n  <span class=\"message_timestamp\">\n    2017-05-02 20:25:35 UTC\n  </span>\n  <span class=\"message_star\"></span>\n  <span class=\"message_content\"... (via streamed from room_channel)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel transmitting "<div class=\"message\">\n  <a href=\"\" class=\"message_profile-pic\"></a>\n  <a href=\"\" class=\"message_username\">dunny@dsl.pipex.co.uk</a>\n  <span class=\"message_timestamp\">\n    2017-05-02 20:25:35 UTC\n  </span>\n  <span class=\"message_star\"></span>\n  <span class=\"message_content\"... (via streamed from room_channel)
+[ActionCable] [dunny@dsl.pipex.co.uk] Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 21:29:56 +0100
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel stopped streaming from room_channel
+[ActionCable] [dunny@dsl.pipex.co.uk] Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 21:31:07 +0100
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel stopped streaming from room_channel
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 22:08:20 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 22:08:20 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 22:08:20 +0100
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 22:08:20 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
+Started GET "/blog" for 127.0.0.1 at 2017-05-02 22:08:36 +0100
+  
+ActionController::RoutingError (No route matches [GET] "/blog"):
+  
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.5.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.0) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.0.2) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.0.2) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.0.2) lib/rails/rack/logger.rb:24:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.1) lib/rack/method_override.rb:22:in `call'
+rack (2.0.1) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.1) lib/rack/sendfile.rb:111:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+puma (3.8.2) lib/puma/configuration.rb:224:in `call'
+puma (3.8.2) lib/puma/server.rb:600:in `handle_request'
+puma (3.8.2) lib/puma/server.rb:435:in `process_client'
+puma (3.8.2) lib/puma/server.rb:299:in `block in run'
+puma (3.8.2) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered collection of /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_route.html.erb [17 times] (208.6ms)
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/routes/_table.html.erb (6.0ms)
+  Rendering /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (6.7ms)
+  Rendered /home/dave/.rvm/gems/ruby-2.4.0/gems/actionpack-5.0.2/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (744.6ms)
+Started GET "/" for 127.0.0.1 at 2017-05-02 22:08:40 +0100
+Processing by RoomsController#show as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mMessage Load (1.1ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [2 times] (12.0ms)
+  Rendered rooms/show.html.erb within layouts/application (22.2ms)
+Completed 200 OK in 154ms (Views: 142.4ms | ActiveRecord: 5.1ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-05-02 22:08:42 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 22:08:42 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
