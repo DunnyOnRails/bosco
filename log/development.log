@@ -1546,3 +1546,63 @@ An unauthorized connection attempt was rejected
 Failed to upgrade to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
 Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 23:23:58 +0100
 Finished "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-02 23:23:58 +0100
+Started GET "/" for 127.0.0.1 at 2017-05-03 21:20:04 +0100
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by RoomsController#show as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendering rooms/show.html.erb within layouts/application
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages"[0m
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  Rendered collection of messages/_message.html.erb [18 times] (20.0ms)
+  Rendered rooms/show.html.erb within layouts/application (32.4ms)
+Completed 200 OK in 184ms (Views: 147.3ms | ActiveRecord: 10.8ms)
+
+
+Started GET "/cable" for 127.0.0.1 at 2017-05-03 21:20:05 +0100
+Started GET "/cable/" [WebSocket] for 127.0.0.1 at 2017-05-03 21:20:05 +0100
+Successfully upgraded to WebSocket (REQUEST_METHOD: GET, HTTP_CONNECTION: keep-alive, Upgrade, HTTP_UPGRADE: websocket)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk] Registered connection (Z2lkOi8vYWMvVXNlci8x)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is transmitting the subscription confirmation
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel is streaming from room_channel
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel#speak({"message"=>"Working on here?"})
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35mSQL (1.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Working on here?"], ["created_at", 2017-05-03 20:20:15 UTC], ["updated_at", 2017-05-03 20:20:15 UTC], ["user_id", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] [dunny@dsl.pipex.co.uk] [ActiveJob] Enqueued BroadcastMessageJob (Job ID: 21cb99dd-2cf7-44b2-9ec7-98644dad7c5f) to Sidekiq(default) with arguments: #<GlobalID:0x007f9465dc61e8 @uri=#<URI::GID gid://ac/Message/19>>
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 19], ["LIMIT", 1]]
+[ActiveJob] [BroadcastMessageJob] [21cb99dd-2cf7-44b2-9ec7-98644dad7c5f] Performing BroadcastMessageJob from Sidekiq(default) with arguments: #<GlobalID:0x007f06782d6380 @uri=#<URI::GID gid://ac/Message/19>>
+[ActiveJob] [BroadcastMessageJob] [21cb99dd-2cf7-44b2-9ec7-98644dad7c5f]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [BroadcastMessageJob] [21cb99dd-2cf7-44b2-9ec7-98644dad7c5f]   Rendered messages/_message.html.erb (20.7ms)
+[ActiveJob] [BroadcastMessageJob] [21cb99dd-2cf7-44b2-9ec7-98644dad7c5f] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n  <a href=\"\" class=\"message_profile-pic\"></a>\n  <a href=\"\" class=\"message_username\">dunny@dsl.pipex.co.uk</a>\n  <span class=\"message_timestamp\">\n    2017-05-03 20:20:15 UTC\n  </span>\n  <span class=\"message_star\"></span>\n  <span class=\"message_content\">\n    Working on here?\n  </span>\n</div>\n"
+[ActiveJob] [BroadcastMessageJob] [21cb99dd-2cf7-44b2-9ec7-98644dad7c5f] Performed BroadcastMessageJob from Sidekiq(default) in 71.97ms
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel transmitting "<div class=\"message\">\n  <a href=\"\" class=\"message_profile-pic\"></a>\n  <a href=\"\" class=\"message_username\">dunny@dsl.pipex.co.uk</a>\n  <span class=\"message_timestamp\">\n    2017-05-03 20:20:15 UTC\n  </span>\n  <span class=\"message_star\"></span>\n  <span class=\"message_content\"... (via streamed from room_channel)
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel#speak({"message"=>"Oh yes, wiorking on here"})
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "messages" ("content", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["content", "Oh yes, wiorking on here"], ["created_at", 2017-05-03 20:20:24 UTC], ["updated_at", 2017-05-03 20:20:24 UTC], ["user_id", 1]]
+[ActionCable] [dunny@dsl.pipex.co.uk]   [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+[ActionCable] [dunny@dsl.pipex.co.uk] [ActiveJob] Enqueued BroadcastMessageJob (Job ID: dc959d8a-63f0-4899-83dc-b53ffcaf2b84) to Sidekiq(default) with arguments: #<GlobalID:0x007f9465b148c8 @uri=#<URI::GID gid://ac/Message/20>>
+  [1m[36mMessage Load (0.6ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = $1 LIMIT $2[0m  [["id", 20], ["LIMIT", 1]]
+[ActiveJob] [BroadcastMessageJob] [dc959d8a-63f0-4899-83dc-b53ffcaf2b84] Performing BroadcastMessageJob from Sidekiq(default) with arguments: #<GlobalID:0x007f0674007748 @uri=#<URI::GID gid://ac/Message/20>>
+[ActiveJob] [BroadcastMessageJob] [dc959d8a-63f0-4899-83dc-b53ffcaf2b84]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[ActiveJob] [BroadcastMessageJob] [dc959d8a-63f0-4899-83dc-b53ffcaf2b84]   Rendered messages/_message.html.erb (2.5ms)
+[ActiveJob] [BroadcastMessageJob] [dc959d8a-63f0-4899-83dc-b53ffcaf2b84] [ActionCable] Broadcasting to room_channel: "<div class=\"message\">\n  <a href=\"\" class=\"message_profile-pic\"></a>\n  <a href=\"\" class=\"message_username\">dunny@dsl.pipex.co.uk</a>\n  <span class=\"message_timestamp\">\n    2017-05-03 20:20:24 UTC\n  </span>\n  <span class=\"message_star\"></span>\n  <span class=\"message_content\">\n    Oh yes, wiorking on here\n  </span>\n</div>\n"
+[ActiveJob] [BroadcastMessageJob] [dc959d8a-63f0-4899-83dc-b53ffcaf2b84] Performed BroadcastMessageJob from Sidekiq(default) in 7.47ms
+[ActionCable] [dunny@dsl.pipex.co.uk] RoomChannel transmitting "<div class=\"message\">\n  <a href=\"\" class=\"message_profile-pic\"></a>\n  <a href=\"\" class=\"message_username\">dunny@dsl.pipex.co.uk</a>\n  <span class=\"message_timestamp\">\n    2017-05-03 20:20:24 UTC\n  </span>\n  <span class=\"message_star\"></span>\n  <span class=\"message_content\"... (via streamed from room_channel)
