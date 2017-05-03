@@ -15,3 +15,9 @@ test:
   pool: 5
   username: dave
   password: welcome
+
+production:
+      adapter: postgresql
+      database: postgresql-dimensional-71239
+      pool: 5
+      timeout: 5000
