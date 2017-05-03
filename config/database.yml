@@ -16,8 +16,4 @@ test:
   username: dave
   password: welcome
 
-production:
-      adapter: postgresql
-      database: postgres://sbondytaugjdqe:fe0ff547789b97
-      pool: 5
-      timeout: 5000
+production: url: <%= ENV['DATABASE_URL'] %>0
